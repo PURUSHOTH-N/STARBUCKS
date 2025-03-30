@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .navbarcontainer{
+        border: 1px solid rgb(rgb(255, 0, 0));
+        height: 60px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        column-gap: 60px;   
+        column-gap: 10px;
+        border-bottom: 1px solid gray;
+
+    }
+    img{
+        height: 35px;
+        padding-top: 15px;
+
+    }
+    #menu{
+        display: flex;
+        cursor: pointer; 
+        width: 200px;
+        padding-right: 50px;
+        padding-left: 10px;
+    }
+    .Search{
+        border-radius: 20px;
+        border: 1px solid rgb(165, 154, 154);
+        height: 30px;
+        width: 550px;
+        text-align: center;
+        margin-top: 10px;
+        margin-right:50px;
+        margin-left: 100px;
+
+    }
+    .lang{
+     padding-top: 15px;
+     padding-right: 50px;
+     
+    }
+    li{
+        width: 70px;
+        font-size: 18px;
+        padding-top: 19px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        padding-right: 210px;
+    }
+    .logsig{
+        cursor: pointer;
+        padding-left: 50px;
+    }
+</style>
+<body>
+    <div class="navbarcontainer">
+        <div class="logo">
+            <img src="./download.png" alt="image">
+        </div>
+        <div class="menu" id="menu"><ul><li>Music</li>
+        <li>Podcast</li>
+        <li>Pro</li></ul></div>
+        <div><input type="text" class="Search" id="Search" placeholder="Search"></div>
+        <div class="lang">
+            <form action="">
+                <select name="" id="">
+                    <option value="" disabled selected>Music languages</option>
+                    <option value="">Tamil</option>
+                    <option value="">English</option>
+                    <option value="">Hindi</option>
+                    <option value="">Kannada</option>
+                </select>
+            </form>
+                </div>
+            <div class="logsig">
+                  <ul>
+                    <li>Log In</li>
+                    <li>Sign Up</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

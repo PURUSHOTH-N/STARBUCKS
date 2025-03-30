@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <section class="w-[100vw] shadow h-[100vh] bg-[#e7e6e6]">
+        <header class="w-full h-[65px] shadow bg-[#e7e6e6] fixed flex">
+            <div class="w-[140px] h-[full] flex justify-center items-center">
+                <img src="./asset/download.png" alt="" class="w-[120px] h-[34px]">
+            </div>
+            <div class="w-[180px] h-full">
+                <ul class="h-full flex justify-evenly items-center text-gray-700 font-semibold">
+                    <li class="cursor-pointer hover:underline">Music</li>
+                    <li class="cursor-pointer hover:underline">Podcasts</li>
+                    <li class="cursor-pointer hover:underline">Pro</li>
+                </ul>
+            </div>
+            <div class="w-[600px] h-full border-green-700 ml-32 flex justify-center items-center">
+                <div class="w-[600px] h-[40px] bg-white rounded-full flex justify-center items-center">
+                    <i class="fa-solid fa-magnifying-glass ml-32"></i><input type="text" placeholder="Search" class="outline-none ml-2">
+                </div>
+            </div>
+                <div class="w-[200px] h-full bg-[#E7E6E6] flex justify-center items-center">
+                    <select name="" id="" class="text-gray-700 bg-white font-semibold">
+                        <option value=""selected disabled>Music Language</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Kannada">Kannada</option>
+                        <option value="Malayalam">Malayalam</option>
+                        <option value="English">English</option>
+                    </select>
+                </div>
+                <div class="w-[200px] h-full flex justify-evenly items-center">
+                    <a href="#" class="text-gray-700 font-semibold">Log In</a>
+                    <a href="#" class="text-gray-700 font-semibold">Sign Up</a>
+                </div>
+        </header>
+        <main class="border w-[100vw] h-[600vh] flex justify-between items-center ">
+            <aside class="w-[20vw] h-full py-10 px-16 mt-16 bg-[#f9f2f2] ">
+                <h1 class="text-gray-500 font-semibold py-2">BROWSE</h1>
+                <ul>
+                    <li class="text-gray-700 font-semibold cursor-pointer py-1 hover:text-black">New Releases</li>
+                    <li class="text-gray-700 font-semibold cursor-pointer py-1 hover:text-black">Top Charts</li>
+                    <li class="text-gray-700 font-semibold cursor-pointer py-1 hover:text-black">Top playlists</li>
+                    <li class="text-gray-700 font-semibold cursor-pointer py-1 hover:text-black">Podcasts</li>
+                    <li class="text-gray-700 font-semibold cursor-pointer py-1 hover:text-black">Top Artists</li>
+                    <li class="text-gray-700 font-semibold cursor-pointer py-1 hover:text-black">Radio</li>
+                </ul>
+                    <h1 class="text-gray-500 font-semibold py-2 mt-4">LIBRARY</h1>
+                    <ul>
+                        <li class="text-gray-700 font-semibold cursor-pointer py-1"><span class=" mr-3 text-lg hover:text-[#1eccb0]"><i class="fa-solid fa-clock-rotate-left"></i></span><span>History</span></li>
+                        <li class="text-gray-700 font-semibold cursor-pointer py-1"><span class=" mr-3 text-lg hover:text-[#1eccb0]"><i class="fa-solid fa-music"></i></span><span>Liked Songs</span></li>
+                        <li class="text-gray-700 font-semibold cursor-pointer py-1"><span class=" mr-3 text-lg hover:text-[#1eccb0]"><i class="fa-solid fa-record-vinyl"></i></span><span>Album</span></li>
+                        <li class="text-gray-700 font-semibold cursor-pointer py-1"><span class=" mr-3 text-lg hover:text-[#1eccb0]"><i class="fa-solid fa-podcast"></i></span><span>Podcasts</span></li>
+                        <li class="text-gray-700 font-semibold cursor-pointer py-1"><span class=" mr-3 text-lg hover:text-[#1eccb0]"><i class="fa-solid fa-microphone"></i></span><span>Artists</span></li>
+                    </ul>
+                    <button class="mt-8 py-2 px-4 border border-[#218a78] text-[#158a77] rounded-full cursor-pointer">
+                        <span><i class="fa-solid fa-plus text-[#258F83]"></i></span>
+                        <span class="text-[#258F83] font-semibold"> New Playlists</span>
+                    </button>
+            </aside>
+            <aside class="w-[80vw] h-full mt-24 bg-[#E7E6E6]">
+                <article class="w-full mt-8 h-[300px]">
+                  <h1 class="text-2xl font-bold text-gray-700 px-5 py-3">Trending Now</h1>
+                  <section class="w-full h-full flex justify-evenly items-center">
+                    <div class="w-[150px] h-[210px] ml-6">
+                      <img src="./asset/Sithira-Puthiri-from-Think-Indie-Tamil-2025-20250131150403-150x150.png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                      <h3 class="px-5 text-gray-800 text-center font-bold">Sithira Puthiri</h3>
+                      <h4 class="text-center">Sai Abhyankar</h4>
+                      <div class="w-[150px] h-[150px] mt-[183px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                        <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                          <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="w-[150px] h-[210px] ml-6">
+                      <img src="./asset/Pushpa-2-The-Rule-Tamil-Tamil-2024-20241205211022-150x150 (1).png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                      <h3 class="px-5 text-gray-800 text-center font-bold">Pushpa</h3>
+                      <h4 class="text-center">Allu Arjun</h4>
+                      <div class="w-[150px] h-[150px] mt-[183px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                        <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                          <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="w-[150px] h-[210px] ml-6">
+                      <img src="./asset/Hunter-Vantaar-From-Vettaiyan-Tamil-2024-20240920102831-150x150.png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                      <h3 class="px-5 text-gray-800 text-center font-bold">Vettaiyan</h3>
+                      <h4 class="text-center">Anirudh Ravichander</h4>
+
+                      <div class="w-[150px] h-[150px] mt-[183px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                        <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                          <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+                      </div>  
+                    </div>
+                    <div class="w-[150px] h-[210px] ml-6">
+                      <img src="./asset/Dragon-Tamil-2025-20250221231203-150x150.png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                      <h3 class="px-5 text-gray-800 text-center font-bold">Dragon</h3>
+                      <h4 class="text-center">Leon James</h4>
+                      <div class="w-[150px] h-[150px] mt-[183px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                        <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                          <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="w-[150px] h-[210px] ml-6">
+                      <img src="./asset/Matta-From-The-Greatest-Of-All-Time-Tamil-2024-20240831141002-150x150.png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                      <h3 class="px-5 text-gray-800 text-center font-bold">The G.O.A.T</h3>
+                      <h4 class="text-center">Yuvan Shankar Raja</h4>
+                      <div class="w-[150px] h-[150px] mt-[183px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                        <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                          <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="w-[150px] h-[210px] ml-6">
+                      <img src="./asset/Devara-Part-1-Tamil-Tamil-2024-20240926171017-150x150.png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                      <h3 class="px-5 text-gray-800 text-center font-bold">Devara</h3>
+                      <h4 class="text-center">Anirudh Ravichander</h4><div class="w-[150px] h-[150px] mt-[183px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                        <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                          <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </div>  
+                      </div>
+                    </div>
+                  </section>
+                  <article class="w-full h-[300px]">
+                    <h1 class="text-2xl font-bold text-gray-700 px-5 py-3">New Releases</h1>
+                    <section class="w-full h-full flex justify-evenly items-center">
+                      <div class="w-[150px] h-[210px] ml-6">
+                        <img src="./asset/unnamed (3).png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                        <h3 class="px-5 text-gray-800 text-center font-bold">Adi Penne</h3>
+                        <h4 class="text-center">Jr. N.T.R</h4>
+                        <div class="w-[150px] h-[150px] mt-[538px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                          <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                            <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                              <i class="fa-regular fa-heart"></i>
+                              <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="w-[150px] h-[210px] ml-6">
+                        <img src="./asset/unnamed (5).png" alt="" class="w-[200px] h-[150px] rounded-lg cursor-pointer">
+                        <h3 class="px-5 text-gray-800 text-center font-bold">Bachelor</h3>
+                        <h4 class="text-center">G.V Prakash</h4>
+                        <div class="w-[150px] h-[150px] mt-[538px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                          <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                            <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                              <i class="fa-regular fa-heart"></i>
+                              <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="w-[150px] h-[210px] ml-6">
+                        <img src="./asset/unnamed (6).png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                        <h3 class="px-5 text-gray-800 text-center font-bold">Ayan</h3>
+                        <h4 class="text-center">Harris Jeyaraj</h4>
+                        <div class="w-[150px] h-[150px] mt-[538px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                          <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                            <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                              <i class="fa-regular fa-heart"></i>
+                              <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="w-[150px] h-[210px] ml-6">
+                        <img src="./asset/unnamed (1).png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                        <h3 class="px-5 text-gray-800 text-center font-bold">Aasa Kooda</h3>
+                        <h4 class="text-center">Sai Abhyankar</h4>
+                        <div class="w-[150px] h-[150px] mt-[538px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                          <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                            <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                              <i class="fa-regular fa-heart"></i>
+                              <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="w-[150px] h-[210px] ml-6">
+                        <img src="./asset/unnamed (2).png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                        <h3 class="px-5 text-gray-800 text-center font-bold">3</h3>
+                        <h4 class="text-center">Anirudh</h4>
+                        <div class="w-[150px] h-[150px] mt-[538px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                          <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                            <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                              <i class="fa-regular fa-heart"></i>
+                              <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="w-[150px] h-[210px] ml-6">
+                        <img src="./asset/unnamed (4).png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                        <h3 class="px-5 text-gray-800 text-center font-bold">Amaran</h3>
+                        <h4 class="text-center">G.V Prakash</h4>
+                        <div class="w-[150px] h-[150px] mt-[538px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                          <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                            <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                              <i class="fa-regular fa-heart"></i>
+                              <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                      </div>
+                </article>
+                <article class="w-full  h-[300px]">
+                  <h1 class="text-2xl font-bold text-gray-700 px-5 py-3">Top Charts</h1>
+                  <section class="w-full h-full flex justify-evenly items-center">
+                    <div class="w-[150px] h-[210px] ml-6">
+                      <img src="./asset/unnamed (7).png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                      <h3 class="px-5 text-gray-800 text-center font-bold">Beast</h3>
+                      <h4 class="text-center">Anirudh Ravichander</h4>
+                      <div class="w-[150px] h-[150px] mt-[838px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                        <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                          <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="w-[150px] h-[210px] ml-6">
+                      <img src="./asset/unnamed (8).png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                      <h3 class="px-5 text-gray-800 text-center font-bold">L.I.K</h3>
+                      <h4 class="text-center">Anirudh Ravichander</h4>
+                      <div class="w-[150px] h-[150px] mt-[838px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                        <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                          <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="w-[150px] h-[210px] ml-6">
+                      <img src="./asset/Vidaamuyarchi-Tamil-2025-20250217133052-150x150.png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                      <h3 class="px-5 text-gray-800 text-center font-bold">Vidaamuyarchi</h3>
+                      <h4 class="text-center">Anirudh Ravichander</h4>
+                      <div class="w-[150px] h-[150px] mt-[838px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                        <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                          <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="w-[150px] h-[210px] ml-6">
+                      <img src="./asset/Golden-Sparrow-From-Nilavuku-En-Mel-Ennadi-Kobam-Tamil-2024-20241116194614-150x150.png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                      <h3 class="px-5 text-gray-800 text-center font-bold">N.E.E.K</h3>
+                      <h4 class="text-center">G.V.Prakash</h4>
+                      <div class="w-[150px] h-[150px] mt-[838px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                        <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                          <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="w-[150px] h-[210px] ml-6">
+                      <img src="./asset/Chikitu-Vibe-From-Coolie-Tamil-2024-20241212221629-150x150.png" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                      <h3 class="px-5 text-gray-800 text-center font-bold">Coolie</h3>
+                      <h4 class="text-center">Anirudh Ravichander</h4>
+                      <div class="w-[150px] h-[150px] mt-[838px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                        <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                          <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="w-[150px] h-[210px] ml-6">
+                      <img src="https://c.saavncdn.com/144/Udaa-Ke-Le-Gayi-From-Hari-Hara-Veera-Mallu-Hindi-Hindi-2025-20250221230821-150x150.jpg" alt="" class="w-[200px] h-[150px]  rounded-lg cursor-pointer">
+                      <h3 class="px-5 text-gray-800 text-center font-bold">Pushpa</h3>
+                      <h4 class="text-center">Allu Arjun</h4>
+                      <div class="w-[150px] h-[150px] mt-[838px] hover:bg-black/50 absolute top-0 text-white rounded-lg opacity-0 hover:opacity-100">
+                        <i class="fa-solid fa-circle-play text-3xl absolute top-[35%] left-[35%] p-3 bg-black rounded-full scale-100 hover:scale-125 transition-colors"></i>
+                          <div class="w-full h-full flex justify-between items-end px-3 py-2 opacity-0 hover:opacity-100">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                          </div>
+                      </div>
+                    </div>
+                  </main>                   
+                    </section>          
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            transform: scale(0);
+            animation: containerEntrance 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+        }
+
+        @keyframes containerEntrance {
+            to {
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        input {
+            width: 80%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #764ba2;
+            box-shadow: 0 0 8px rgba(118, 75, 162, 0.3);
+        }
+
+        button {
+            padding: 0.8rem 2rem;
+            background: #764ba2;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #5a3792;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .result {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: resultEntrance 0.5s ease-out forwards;
+        }
+
+        @keyframes resultEntrance {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Different styles for each result */
+        .friends { background: #4CAF50; color: white; }
+        .lovers { background: #E91E63; color: white; }
+        .affectionate { background: #FF9800; color: white; }
+        .marriage { background: #9C27B0; color: white; }
+        .enemies { background: #F44336; color: white; }
+        .siblings { background: #2196F3; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💞FLAMES GENERATOR💞</h1>
+        <div class="input-group">
+            <input type="text" id="name1" placeholder="Enter first name" required>
+            <input type="text" id="name2" placeholder="Enter second name" required>
+        </div>
+        <button onclick="calculateRelationship()">Find Relationship</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateRelationship() {
+            const name1 = document.getElementById('name1').value.trim();
+            const name2 = document.getElementById('name2').value.trim();
+            const resultDiv = document.getElementById('result');
+
+            if (!name1 || !name2) {
+                alert('Please enter both names!');
+                return;
+            }
+
+            const result = flamesGame(name1, name2);
+            
+            resultDiv.textContent = `The relationship is: ${result}`;
+            resultDiv.className = `result ${result.toLowerCase()}`;
+            resultDiv.style.opacity = 0;
+            setTimeout(() => {
+                resultDiv.style.opacity = 1;
+            }, 10);
+        }
+
+        function flamesGame(name1, name2) {
+            // Process names
+            let processedName1 = name1.replace(/ /g, '').toLowerCase();
+            let processedName2 = name2.replace(/ /g, '').toLowerCase();
+
+            let arr1 = processedName1.split('');
+            let arr2 = processedName2.split('');
+
+            // Create copy of original characters to iterate over
+            const originalChars = [...arr1];
+
+            for (const char of originalChars) {
+                const indexInArr2 = arr2.indexOf(char);
+                if (indexInArr2 !== -1) {
+                    const indexInArr1 = arr1.indexOf(char);
+                    if (indexInArr1 !== -1) {
+                        arr1.splice(indexInArr1, 1);
+                    }
+                    arr2.splice(indexInArr2, 1);
+                }
+            }
+
+            const count = arr1.length + arr2.length;
+
+            let flames = ['Friends', 'Lovers', 'Affectionate', 'Marriage', 'Enemies', 'Siblings'];
+
+            while (flames.length > 1) {
+                const index = (count % flames.length) - 1;
+                if (index >= 0) {
+                    flames = flames.slice(index + 1).concat(flames.slice(0, index));
+                } else {
+                    flames.pop();
+                }
+            }
+
+            return flames[0];
+        }
+
+        // Add Enter key support
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('name1').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') calculateRelationship();
+            });
+            document.getElementById('name2').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') calculateRelationship();
+            });
+        });
+    </script>
+</body>
+</html>

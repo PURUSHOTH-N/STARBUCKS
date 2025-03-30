@@ -1,0 +1,92 @@
+[
+    {
+        "id":101,
+        "name":"paul",
+        "skills":["HTML","CSS","JS","Tailwind CSS"],
+        "personalDetails":{
+            "address":"porur",
+            "city":"chennai"
+        }
+    },
+    {
+        "id":102,
+        "name":"prasanna",
+        "skills":["HTML","CSS","JS","Tailwind CSS"],
+        "personalDetails":{
+            "address":"Main street",
+            "city":"Pondicherry"
+        }
+    },
+    {
+        "id":103,
+        "name":"Raghu",
+        "skills":["HTML","CSS","JS","Tailwind CSS"],
+        "personalDetails":{
+            "address":"Main street",
+            "city":"Chengalpattu"
+        }
+    },
+    {
+        "id":104,
+        "name":"Sai Vignesh",
+        "skills":["HTML","CSS","JS","Tailwind CSS"],
+        "personalDetails":{
+            "address":"Main street",
+            "city":"Madurai"
+        }
+    },
+    {
+        "id":105,
+        "name":"pranesh",
+        "skills":["HTML","CSS","JS","Tailwind CSS"],
+        "personalDetails":{
+            "address":"Main street",
+            "city":"Salem"
+        }
+    },
+    {
+        "id":106,
+        "name":"nithish",
+        "skills":["HTML","CSS","JS","Tailwind CSS"],
+        "personalDetails":{
+            "address":"Main street",
+            "city":"Dindigul"
+        }
+    },
+    {
+        "id":107,
+        "name":"Sudharsan",
+        "skills":["HTML","CSS","JS","Tailwind CSS"],
+        "personalDetails":{
+            "address":"Main street",
+            "city":"kanchipuram"
+        }
+    },
+    {
+        "id":108,
+        "name":"ramesh",
+        "skills":["HTML","CSS","JS","Tailwind CSS"],
+        "personalDetails":{
+            "address":"Main street",
+            "city":"chennai"
+        }
+    },
+    {
+        "id":109,
+        "name":"Panda",
+        "skills":["HTML","CSS","JS","Tailwind CSS"],
+        "personalDetails":{
+            "address":"Main street",
+            "city":"tirupur"
+        }
+    },
+    {
+        "id":110,
+        "name":"punithan",
+        "skills":["HTML","CSS","JS","Tailwind CSS"],
+        "personalDetails":{
+            "address":"Main street",
+            "city":"Bangalore"
+        }
+    }   
+]

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&display=swap" rel="stylesheet"');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgb(244, 238, 231);
+    overflow-y:none;
+ 
+}
+.navbarcontainer{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap:80px;
+    border:1px solid rgb(0, 0, 0);
+    height:100px;
+    width:100vw;
+
+}
+img{
+    width: 120px;
+    height: 35px;
+
+
+}
+#mediumlogo{
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+}
+
+ul{
+    width: 600px;
+    height: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center ;
+    list-style: none;
+    font-family: sans-serif;
+
+    
+}
+li{
+    padding: 8px 18px;
+    font-size: 19px;
+    cursor: pointer;
+}
+li:nth-child(5){
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+section{
+    width: 100vw;
+    height: 775px;
+    display:flex;
+    border-bottom:1px solid black;
+
+
+   
+}
+.left-side{
+    width: 70vw;
+    height: 730px;      
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+
+}
+button{
+    width: 200px;
+    height: 50px;
+}
+
+.right-side{
+    width: 30vw;
+    height: 730px;
+    background-image: url(./asset/4_SdjkdS98aKH76I8eD0_qjw.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+ 
+    
+}
+h1{
+    font-size: 150px;
+    padding: 120px 80px 20px 200px;
+   
+}
+h3{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0px 80px 20px 200px;
+    
+}
+button{
+
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    margin: 50px 80px 20px 200px;
+    height:60px;
+    width:260px;
+}
+.navbarcontainerbot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:33px;
+    height:48px;
+    
+    
+    
+}
+.navbarcontainerbot a{
+    padding: 0px 15px;
+    text-decoration: none;
+    color: gray;
+    
+
+}
