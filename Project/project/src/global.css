@@ -3,4 +3,6 @@
 body{
     font-family: "Moon Dance", cursive;
     background-color:  rgb(12, 12, 57);
+    overflow-x: hidden;
+    overflow-y: auto;
 }   

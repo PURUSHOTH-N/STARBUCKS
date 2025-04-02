@@ -50,7 +50,7 @@ const UploadProfilePhoto = () => {
                 photoURL:imageUrl
             }); 
             toast.success("Profile photo updated successfully");
-            navigate("/user/profile/my-account");
+            navigate("/user/profile");
 
             //! Update the profile
 
@@ -63,15 +63,15 @@ const UploadProfilePhoto = () => {
     }
     return (
         <section className="w-[100%] h-[calc(100vh-70px)] flex justify-center items-center flex-col text-white">
-            <article className='w-[35%] bg-[#152C80] flex flex-col justify-center items-center'>
+            <article className='w-[35%] bg-black flex flex-col justify-center items-center'>
                 <header className='w-full'>
                     <h1 className='text-3xl text-center font-bold uppercase py-6 '>Upload Profile Photo</h1>
                 </header>
-                {photoPreview === null ? <><div className='w-[150px] h-[150px] border rounded-full flex justify-center items-center bg-blue-900'>
+                {photoPreview === null ? <><div className='w-[150px] h-[150px] border rounded-full flex justify-center items-center bg-[#0C0C50]'>
                     No File Chosen
                 </div></> : <><img src={photoPreview} alt="" className='w-[150px] h-[150px] border rounded-full flex justify-center items-center bg-blue-900' /></>}
             </article>
-            <main className='w-[35%] bg-[#152C80]'>
+            <main className='w-[35%] bg-black'>
                 <form onSubmit={handleSubmit}>
                     <div className='flex flex-col justify-center my-3 px-6'>
                         <label htmlFor="profile" className='font-semibold text-lg py-2'>Upload Your Profile Photo here</label>
@@ -84,7 +84,7 @@ const UploadProfilePhoto = () => {
                         />
                     </div>
                     <div className='flex justify-center items-center mt-3 mb-5'>
-                        <button className='py-2 px-6 bg-blue-700 cursor-pointer hover:bg-blue-800 rounded text-lg'>
+                        <button className='py-2 px-6 bg-[#0C0C50] cursor-pointer hover:bg-blue-800 rounded text-lg'>
                             Upload Profile
                         </button>
                     </div>

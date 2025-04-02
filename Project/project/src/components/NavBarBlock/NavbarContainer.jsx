@@ -4,7 +4,7 @@ import Menu from './Menu'
 
 const NavbarContainer = () => {
   return (
-    <header className='w-[100vw] h-[70px] bg-black  text-white flex justify-between items-center'>
+    <header className='w-[100vw] h-[70px] bg-black text-white flex justify-between items-center'>
         <Logo/>
         <Menu/>
     </header>

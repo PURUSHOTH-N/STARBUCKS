@@ -5,11 +5,13 @@ import App from './App'
 import { RouterProvider } from 'react-router-dom'
 import route from './routes/Routess'
 import AuthContextApi from './context/AuthContextApi'
+import FetchUserContext from './context/FetchUserContext'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 <>
 <AuthContextApi>
-<RouterProvider router={route}/>
+    <FetchUserContext><RouterProvider router={route}/></FetchUserContext>
+
 </AuthContextApi>
 
 </>)
